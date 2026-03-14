@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecycleRight – Make Every Material Count</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">♻️</span>
+        <span class="logo-text">RecycleRight</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#impact">Our Impact</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ───────────────────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">🌱 Sustainability Made Simple</span>
+      <h1 class="hero-title">
+        Recycle Smarter,<br />
+        <span class="gradient-text">Live Greener</span>
+      </h1>
+      <p class="hero-subtitle">
+        Join millions of people turning waste into resources. Learn what to
+        recycle, how to recycle it, and track your positive impact on the planet.
+      </p>
+      <div class="hero-actions">
+        <a href="#categories" class="btn btn-primary">Start Recycling</a>
+        <a href="#how-it-works" class="btn btn-ghost">Learn How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="2500000">0</span>
+          <span class="stat-label">Items Recycled</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="48000">0</span>
+          <span class="stat-label">Active Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="320">0</span>
+          <span class="stat-label">Tonnes CO₂ Saved</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="globe-ring ring-1"></div>
+      <div class="globe-ring ring-2"></div>
+      <div class="globe-ring ring-3"></div>
+      <div class="globe-emoji">🌍</div>
+      <div class="floating-card card-a">
+        <span>♻️</span> Plastic recycled today
+        <strong>+1,240</strong>
+      </div>
+      <div class="floating-card card-b">
+        <span>🌿</span> CO₂ offset this week
+        <strong>4.2 t</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Categories ─────────────────────────────────────────────────────── -->
+  <section class="section categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What Can I Recycle?</span>
+        <h2 class="section-title">Recycling Categories</h2>
+        <p class="section-desc">
+          Tap any category to learn exactly what belongs in each bin and how to
+          prepare materials for collection.
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card" data-category="plastic">
+          <div class="card-icon" style="background: #e8f5e9;">🧴</div>
+          <h3>Plastic</h3>
+          <p>Bottles, containers, packaging, and more. Check the recycling number on the bottom.</p>
+          <div class="card-tags">
+            <span class="tag">PET #1</span>
+            <span class="tag">HDPE #2</span>
+            <span class="tag">PP #5</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+
+        <div class="category-card" data-category="paper">
+          <div class="card-icon" style="background: #fff8e1;">📦</div>
+          <h3>Paper &amp; Cardboard</h3>
+          <p>Newspapers, magazines, cardboard boxes, office paper and books.</p>
+          <div class="card-tags">
+            <span class="tag">Cardboard</span>
+            <span class="tag">Newspaper</span>
+            <span class="tag">Magazines</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+
+        <div class="category-card" data-category="glass">
+          <div class="card-icon" style="background: #e3f2fd;">🍶</div>
+          <h3>Glass</h3>
+          <p>Bottles and jars sorted by colour. Clean and remove lids before recycling.</p>
+          <div class="card-tags">
+            <span class="tag">Clear</span>
+            <span class="tag">Green</span>
+            <span class="tag">Brown</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+
+        <div class="category-card" data-category="metal">
+          <div class="card-icon" style="background: #fce4ec;">🥫</div>
+          <h3>Metal</h3>
+          <p>Aluminium cans, steel tins, foil trays and scrap metal items.</p>
+          <div class="card-tags">
+            <span class="tag">Aluminium</span>
+            <span class="tag">Steel</span>
+            <span class="tag">Foil</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+
+        <div class="category-card" data-category="electronics">
+          <div class="card-icon" style="background: #ede7f6;">💻</div>
+          <h3>Electronics</h3>
+          <p>Phones, laptops, batteries and e-waste. Drop them at certified e-waste centres.</p>
+          <div class="card-tags">
+            <span class="tag">Phones</span>
+            <span class="tag">Laptops</span>
+            <span class="tag">Batteries</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+
+        <div class="category-card" data-category="organic">
+          <div class="card-icon" style="background: #f9fbe7;">🌱</div>
+          <h3>Organic</h3>
+          <p>Food scraps, garden waste, and compostable packaging for your compost bin.</p>
+          <div class="card-tags">
+            <span class="tag">Food Waste</span>
+            <span class="tag">Garden</span>
+            <span class="tag">Compost</span>
+          </div>
+          <button class="card-btn">Learn More →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How It Works ───────────────────────────────────────────────────── -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple Steps</span>
+        <h2 class="section-title">How RecycleRight Works</h2>
+        <p class="section-desc">
+          Three easy steps to turn your everyday waste into tomorrow's resources.
+        </p>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-connector"></div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon">🔍</div>
+            <h3>Identify</h3>
+            <p>
+              Use our search tool or scan a barcode to instantly find out how
+              to recycle any item correctly.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon">🗂️</div>
+            <h3>Sort</h3>
+            <p>
+              Follow the colour-coded bin guide for your area. Clean containers
+              and separate by material type.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon">🌍</div>
+            <h3>Impact</h3>
+            <p>
+              Track your contribution in your personal dashboard and see how
+              your actions reduce CO₂ emissions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Impact / Stats ─────────────────────────────────────────────────── -->
+  <section class="section impact" id="impact">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-text">
+          <span class="section-tag">Our Impact</span>
+          <h2 class="section-title">Every Piece Matters</h2>
+          <p>
+            When communities recycle together, the numbers are staggering. See
+            what RecycleRight members have achieved so far — and imagine what
+            we can do next.
+          </p>
+          <ul class="impact-list">
+            <li>
+              <span class="check">✔</span>
+              Divert over <strong>2.5 million</strong> items from landfill
+            </li>
+            <li>
+              <span class="check">✔</span>
+              Save <strong>320 tonnes</strong> of CO₂ equivalent
+            </li>
+            <li>
+              <span class="check">✔</span>
+              Recover materials worth <strong>$1.2 million</strong>
+            </li>
+            <li>
+              <span class="check">✔</span>
+              Active in <strong>85 cities</strong> worldwide
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Join the Movement</a>
+        </div>
+
+        <div class="impact-cards">
+          <div class="impact-card" id="ic1">
+            <div class="impact-card-icon">🌊</div>
+            <div class="impact-card-stat" data-target="18000">0</div>
+            <div class="impact-card-label">Plastic bottles kept out of oceans</div>
+          </div>
+          <div class="impact-card" id="ic2">
+            <div class="impact-card-icon">🌳</div>
+            <div class="impact-card-stat" data-target="5400">0</div>
+            <div class="impact-card-label">Trees saved through paper recycling</div>
+          </div>
+          <div class="impact-card" id="ic3">
+            <div class="impact-card-icon">⚡</div>
+            <div class="impact-card-stat" data-target="920000">0</div>
+            <div class="impact-card-label">kWh of energy recovered</div>
+          </div>
+          <div class="impact-card" id="ic4">
+            <div class="impact-card-icon">💧</div>
+            <div class="impact-card-stat" data-target="3100000">0</div>
+            <div class="impact-card-label">Litres of water saved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Tips ───────────────────────────────────────────────────────────── -->
+  <section class="section tips" id="tips">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quick Tips</span>
+        <h2 class="section-title">Recycle Like a Pro</h2>
+        <p class="section-desc">
+          Small habits make a big difference. Keep these golden rules handy.
+        </p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-emoji">🚿</div>
+          <h4>Rinse Before Tossing</h4>
+          <p>Always rinse food and drink containers. Contaminated items can spoil an entire batch of recyclables.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-emoji">🏷️</div>
+          <h4>Leave Labels On</h4>
+          <p>Paper and plastic labels can stay on bottles and jars — they are removed during the recycling process.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-emoji">📦</div>
+          <h4>Flatten Cardboard</h4>
+          <p>Flatten boxes before placing them in the bin to save space and make collection more efficient.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-emoji">🚫</div>
+          <h4>No Plastic Bags</h4>
+          <p>Loose plastic bags clog sorting machinery. Take them to dedicated bag-return points at supermarkets.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-emoji">🔋</div>
+          <h4>Battery Drop-off</h4>
+          <p>Never put batteries in kerbside bins. Drop them at supermarkets, hardware stores or council depots.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-emoji">💡</div>
+          <h4>Wish-cycling Hurts</h4>
+          <p>If you are unsure whether something is recyclable, check first. Wishful recycling contaminates loads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA / Contact ──────────────────────────────────────────────────── -->
+  <section class="section cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-bg-shape"></div>
+        <span class="cta-badge">🌍 Join 48,000+ members</span>
+        <h2>Ready to Make a Difference?</h2>
+        <p>Sign up free and start tracking your recycling impact today.</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Enter your email address"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="btn btn-primary">Get Started Free</button>
+        </form>
+        <p class="cta-note" id="ctaMsg" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">♻️</span>
+          <span class="logo-text">RecycleRight</span>
+        </a>
+        <p>Empowering communities to recycle smarter and live greener since 2024.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Facebook">👍</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Recycle</h5>
+        <ul>
+          <li><a href="#categories">Plastic</a></li>
+          <li><a href="#categories">Paper</a></li>
+          <li><a href="#categories">Glass</a></li>
+          <li><a href="#categories">Metal</a></li>
+          <li><a href="#categories">Electronics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Find a Drop-off</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 RecycleRight. Made with 💚 for the planet.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Category Modal ─────────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody"></p>
+      <div class="modal-tips" id="modalTips"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
